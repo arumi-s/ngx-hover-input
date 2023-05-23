@@ -1,0 +1,16 @@
+{
+	"name": "ngx-hover-input",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/arumi-s/ngx-hover-input.git"
+	},
+	"peerDependencies": {
+		"@angular/common": ">=14.0.0",
+		"@angular/core": ">=14.0.0"
+	},
+	"dependencies": {
+		"tslib": "^2.3.0"
+	}
+}

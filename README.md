@@ -1,4 +1,7 @@
-# NgxHoverInputApp
+# NgxHoverInput
+
+[![NPM](https://img.shields.io/npm/v/ngx-hover-input)](https://www.npmjs.com/package/ngx-hover-input)
+![License](https://img.shields.io/npm/l/ngx-hover-input)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
 
