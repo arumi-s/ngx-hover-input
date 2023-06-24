@@ -10,11 +10,11 @@ import {
 import { HoverInputService } from './hover-input.service';
 
 @Directive({
-	selector: '[hiHoverInput]',
+	selector: '[hiHoverInputNumber]',
 })
-export class HoverInputDirective implements OnInit, OnDestroy {
+export class HoverInputNumberDirective implements OnInit, OnDestroy {
 	@Output()
-	hiHoverInput = new EventEmitter<KeyboardEvent>();
+	hiHoverInputNumber = new EventEmitter<number>();
 
 	constructor(
 		private readonly service: HoverInputService,
@@ -22,10 +22,13 @@ export class HoverInputDirective implements OnInit, OnDestroy {
 	) {}
 
 	ngOnInit(): void {
-		this.service.addReceiver(this.elementRef.nativeElement, this.hiHoverInput);
+		this.service.addNumberReceiver(
+			this.elementRef.nativeElement,
+			this.hiHoverInputNumber
+		);
 	}
 
 	ngOnDestroy(): void {
-		this.service.removeReceiver(this.elementRef.nativeElement);
+		this.service.removeNumberReceiver(this.elementRef.nativeElement);
 	}
 }
